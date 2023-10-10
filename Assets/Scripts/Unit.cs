@@ -8,6 +8,11 @@ public class Unit : MonoBehaviour
 	[SerializeField] private Animator unitAnimator;
     private Vector3 targetPosition;
 
+	private void Awake()
+	{
+		targetPosition = transform.position;
+	}
+
 	private void Update()
 	{
 
